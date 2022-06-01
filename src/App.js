@@ -7,9 +7,13 @@ function App() {
         title: '',
         body: '',
     });
+
+	const updateState = newState => {
+		setState(newState);
+	}
   
     return (
-      <BlogForm />
+      	<BlogForm updateState={updateState} />
     );
 }
 
