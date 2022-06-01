@@ -17,9 +17,9 @@ const BlogForm = ({updateState}) => {
             <input type="text" id="title" value={newState.title} onChange={(e) => setNewState({...newState, title: e.target.value})}/>
 
             <label htmlFor="body">Body</label>
-            <input type="text" id="body" value={newState.body} onChange={(e) => setNewState({...newState, body: e.target.value})}/>
+            <textarea type="text" id="body" onChange={(e) => setNewState({...newState, body: e.target.value})}>{newState.body}</textarea>
 
-            <button type="submit">Submit</button>
+            <button type="submit">Save</button>
         </form>
 
     )
