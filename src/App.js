@@ -1,11 +1,16 @@
+import { useState } from 'react';
+import BlogForm from './components/BlogForm.js'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-
-    </div>
-  );
+    const [state, setState] = useState({
+        title: '',
+        body: '',
+    });
+  
+    return (
+      <BlogForm />
+    );
 }
 
 export default App;
